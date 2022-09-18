@@ -1,4 +1,3 @@
-from doctest import master
 from django.db import models
 
 #! see https://docs.djangoproject.com/en/4.0/topics/i18n/translation/ for this import's duty
@@ -12,7 +11,7 @@ class Category(models.Model):
         return self.name
 
 class Quizzes(models.Model):
-    # we don't want to anything if a quiz is deleted, thus the on_delete=models.DO_NOTHING part
+    #! we don't want to anything if a quiz is deleted, thus the on_delete=models.DO_NOTHING part
     category = models.ForeignKey(Category, default=1, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=255, default=_("New Quiz"), verbose_name=_("Quiz Title"))
     date_created = models.DateTimeField(auto_now_add=True)
@@ -29,7 +28,7 @@ class Updated(models.Model):
     date_updated = models.DateTimeField(verbose_name=_("Last Updated"), auto_now=True)
 
     class Meta:
-        # for Abstract base classes see: https://docs.djangoproject.com/en/4.1/topics/db/models/#abstract-base-classes
+        #! for Abstract base classes see: https://docs.djangoproject.com/en/4.1/topics/db/models/#abstract-base-classes
         abstract = True
 
 class Question(Updated):
