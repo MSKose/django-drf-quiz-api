@@ -1,7 +1,7 @@
 from doctest import master
 from django.db import models
 
-# see https://docs.djangoproject.com/en/4.0/topics/i18n/translation/ for this import's duty
+#! see https://docs.djangoproject.com/en/4.0/topics/i18n/translation/ for this import's duty
 from django.utils.translation import gettext as _
 
 

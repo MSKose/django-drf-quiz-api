@@ -10,10 +10,10 @@ our case down below, we linked answer to question so whenever we go to amdin pag
 from django.contrib import admin
 from .models import Category, Quizzes, Answer, Question
 
-@admin.register(Category)
+@admin.register(Category) #! @admin.register(<Modelname>) does exactly thr same thing as admin.site.register(<Modelname>)
 
 class CatAdmin(admin.ModelAdmin):
-	list_display = [
+	list_display = [      #! list_display controls which fields are to be displayed 
         'name',
         ]
 

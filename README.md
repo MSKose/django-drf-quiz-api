@@ -23,7 +23,7 @@ This is a quiz api repo.
 
 ```python
 # Clone this repository
-$ git clone https://github.com/MSKose/drf-tutorial-2.git
+$ git clone https://github.com/MSKose/django-drf-quiz-api.git
 
 # Install dependencies
     $ python -m venv env
