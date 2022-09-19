@@ -9,9 +9,9 @@
 
 ## Overview
 
-This is a quiz api repo. 
+This is the Back-End repo for the [React Quiz App](https://github.com/MSKose/react-quiz-api).
 
-![screenshot](./drf-tutorial-2.png)
+![screenshot](./django-drf-quiz-api-screenshot.png)
 
 <h2 id="stack">Stack & Tools</h2>
 
